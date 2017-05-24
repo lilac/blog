@@ -9,15 +9,18 @@ class SiteNav extends React.Component {
       <nav className="blog-nav">
         <ul>
           <li>
-            <Link to={prefixLink('/')} activeClassName="current" onlyActiveOnIndex> Articles
+            <Link to={prefixLink('/')} activeClassName="current" onlyActiveOnIndex> 文章
             </Link>
           </li>
           <li>
-            <Link to={prefixLink('/about/')} activeClassName="current"> About me
+            <Link to={prefixLink('/IconStudio/')} activeClassName="current">圖標工作室</Link>
+          </li>
+          <li>
+            <Link to={prefixLink('/about/')} activeClassName="current">關於
             </Link>
           </li>
           <li>
-            <Link to={prefixLink('/contact/')} activeClassName="current"> Contact me
+            <Link to={prefixLink('/contact/')} activeClassName="current">聯絡
             </Link>
           </li>
         </ul>

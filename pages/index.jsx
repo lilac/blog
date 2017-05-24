@@ -8,6 +8,11 @@ import access from 'safe-access';
 import { config } from 'config';
 import SiteSidebar from '../components/SiteSidebar';
 
+import 'moment/locale/zh-hk';
+// var locale = window.navigator.userLanguage || window.navigator.language;
+var locale = "zh-hk";
+moment.locale(locale);
+
 class SiteIndex extends React.Component {
   render() {
     const pageLinks = [];
@@ -22,14 +27,14 @@ class SiteIndex extends React.Component {
 
         pageLinks.push((
           <div className="blog-post" key={title}>
-            <time dateTime={moment(datePublished).format('MMMM D, YYYY')}>
-              {moment(datePublished).format('MMMM YYYY')}
+            <time dateTime={moment(datePublished).format('l')}>
+              {moment(datePublished).format('l')}
             </time>
             <span style={{ padding: '5px' }} />
             <span className="blog-category">{category}</span>
             <h2><Link style={{ borderBottom: 'none' }} to={prefixLink(page.path)}>{title}</Link></h2>
             <p dangerouslySetInnerHTML={{ __html: description }} />
-            <Link className="readmore" to={prefixLink(page.path)}>Read</Link>
+            <Link className="readmore" to={prefixLink(page.path)}>閱讀</Link>
           </div>
         ));
       }

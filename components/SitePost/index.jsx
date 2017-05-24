@@ -13,7 +13,7 @@ class SitePost extends React.Component {
     const post = route.page.data;
     const home = (
       <div>
-        <Link className="gohome" to={prefixLink('/')}>All Articles</Link>
+        <Link className="gohome" to={prefixLink('/')}>全部文章</Link>
       </div>
     );
 
@@ -25,7 +25,7 @@ class SitePost extends React.Component {
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: post.body }} />
             <div className="date-published">
-              <em>Published {moment(post.date).format('D MMM YYYY')}</em>
+              <em>發表於{moment(post.date).format('l')}</em>
             </div>
           </div>
           <div className="footer">
