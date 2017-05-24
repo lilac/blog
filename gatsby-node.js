@@ -23,13 +23,6 @@ exports.modifyWebpackConfig = function (config) {
 };
 
 exports.postBuild = () => {
-  let filename = 'google7e55f41597bad74b.html'
-  fs.copySync(
-    `./${filename}`,
-    `./public/${filename}`
-  )
-  /* Alternative
-  import Shell from 'child_process'
+  const Shell = require('child_process');
   Shell.execSync("cp -r assets/* public/")
-  */
 }
