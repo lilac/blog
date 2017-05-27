@@ -1,0 +1,11 @@
+image: node:4.6.0
+
+pages:
+  script:
+  - npm install -q
+  - npm run gatsby build
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
