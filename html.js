@@ -16,11 +16,11 @@ module.exports = React.createClass({
     let css;
     if (process.env.NODE_ENV === 'production') {
       // eslint-disable-next-line import/no-webpack-loader-syntax
-      css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />;
+      css = <link rel="stylesheet" type="text/css" href="/styles.css" />;
     }
 
     return (
-      <html lang="en">
+      <html lang="zh">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
