@@ -16,6 +16,9 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 
 ![](http://i.imgur.com/422y5GV.png)
 
+## Tips
+If encountering css generation error, try deleting yarn-clean files if that exists. Then reinstall node packages by executing `yarn`. I don't know why, but that works!
+
 ## Ports
 
 [Statinamic port](https://github.com/thangngoc89/statinamic-theme-lumen) by [Khoa Nguyen](https://github.com/thangngoc89)
