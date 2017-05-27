@@ -1,9 +1,9 @@
-image: node:4.6.0
+image: node:7.10
 
 pages:
   script:
-  - npm install -q
-  - npm run gatsby build
+  - yarn
+  - yarn run gatsby build
   artifacts:
     paths:
     - public
