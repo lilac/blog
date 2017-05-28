@@ -19,6 +19,14 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 ## Tips
 If encountering css generation error, try deleting yarn-clean files if that exists. Then reinstall node packages by executing `yarn`. I don't know why, but that works!
 
+### Lets encrypt
+First install a tool by `yarn global add gitlab-letsencrypt`.
+
+Run this command every 90 days, replacing the <gitlab token> with your personal token.
+```
+gitlab-le --token <gitlab token> --email admin@samemoment.com --repository lilac/lilac.gitlab.io --domain blog.samemoment.com
+```
+
 ## Ports
 
 [Statinamic port](https://github.com/thangngoc89/statinamic-theme-lumen) by [Khoa Nguyen](https://github.com/thangngoc89)
