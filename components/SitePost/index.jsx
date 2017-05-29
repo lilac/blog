@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDisqusThread from 'react-disqus-thread';
 import moment from 'moment';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
@@ -28,6 +29,11 @@ class SitePost extends React.Component {
               <em>發表於{moment(post.date).format('l')}</em>
             </div>
           </div>
+          <ReactDisqusThread
+				    shortname="jianmo"
+    				identifier={route.page.path}
+    				title={post.title}
+    				url={route.path} />
           <div className="footer">
             <ReadNext post={post} {...this.props} />
             <hr />
