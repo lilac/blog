@@ -20,7 +20,10 @@ class MarkdownWrapper extends React.Component {
 
     return (
       <div>
-        <Helmet title={`${post.title} - ${config.siteTitle}`} />
+        <Helmet>
+          <title>{`${post.title} - ${config.siteTitle}`}</title>
+          {post.description && <meta name="description" content={post.description} />}
+        </Helmet>
         {template}
       </div>
     );
