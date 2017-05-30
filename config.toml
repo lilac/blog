@@ -11,4 +11,5 @@ siteVkUrl = "#"
 
 googleAnalyticsId = "UA-57000079-2"
 
-linkPrefix = "https://blog.samemoment.com"
+linkPrefix = ""
+baseUrl = "https://blog.samemoment.com"
