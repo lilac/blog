@@ -32,8 +32,7 @@ class SitePost extends React.Component {
           <ReactDisqusThread
 				    shortname="jianmo"
     				identifier={route.page.path}
-    				title={post.title}
-    				url={route.path} />
+    				url={prefixLink(route.path)} />
           <div className="footer">
             <ReadNext post={post} {...this.props} />
             <hr />
