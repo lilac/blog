@@ -13,10 +13,10 @@ class SiteNav extends React.Component {
             </Link>
           </li>
           <li>
-            <Link to={prefixLink('/IconStudio/')} activeClassName="current">圖標工作室</Link>
+            <Link to={prefixLink('/IconStudio/')} activeClassName="current">圖標坊</Link>
           </li>
           <li>
-            <Link to={prefixLink('/latex-symbols/')} activeClassName="current" target="_blank">Latex符號表</Link>
+            <Link to={prefixLink('/latex-symbols/')} activeClassName="current" target="_blank">LaTeX符號表</Link>
           </li>
           <li>
             <Link to={prefixLink('/about/')} activeClassName="current">關於
