@@ -16,6 +16,9 @@ class SiteNav extends React.Component {
             <Link to={prefixLink('/IconStudio/')} activeClassName="current">圖標工作室</Link>
           </li>
           <li>
+            <Link to={prefixLink('/latex-symbols/')} activeClassName="current" target="_blank">Latex符號表</Link>
+          </li>
+          <li>
             <Link to={prefixLink('/about/')} activeClassName="current">關於
             </Link>
           </li>
