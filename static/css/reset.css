@@ -5,7 +5,11 @@ html {
 body {
 	margin: 0;
 }
-
+[lang^="zh"] body{
+    font-family:"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑",
+    "Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,
+    sans-serif !important
+}
 /* HTML5 display definitions
 	 ========================================================================== */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary, cite, code, small {
