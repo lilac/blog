@@ -13,6 +13,9 @@ class SiteNav extends React.Component {
             </Link>
           </li>
           <li>
+            <Link to={prefixLink('/projects/')} activeClassName="current">項目</Link>
+          </li>
+          <li>
             <Link to={prefixLink('/IconStudio/')} activeClassName="current">圖標坊</Link>
           </li>
           <li>

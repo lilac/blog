@@ -16,6 +16,16 @@ a:focus {
 .main-inner {
 	padding: 40px 35px;
 }
+
+@media screen and (min-width:40em) {
+	img {
+		display: inline-block;
+	}
+	img.small {
+		max-width: 30%;
+	}
+}
+
 @media screen and (max-width:1100px) {
 	.content {
 		lost-column: 2/4;
